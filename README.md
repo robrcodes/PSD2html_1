@@ -24,4 +24,4 @@ This landing page was designed by [Evgenia Kornienko](https://www.behance.net/Ja
 
 Adobe [Creative Cloud Extract](http://www.adobe.com/creativecloud/extract.html) was used to source the graphical elements and font information.
 
-![PSD Design](http://imgur.com/Hi4AUnP)
+![PSD Design](/src/screenshotdesign.jpg)
