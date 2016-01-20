@@ -1,0 +1,37 @@
+/*   Work Panels
+-----------------------------------------------------------*/
+.work {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.work-item {
+  flex-basis: 40.3%;
+  position: relative;
+}
+.work-item:nth-child(3n+2) {
+  flex-basis: 58.8%;
+  position: relative;
+}
+.work-item:nth-child(3) {
+  flex-basis: 49.5%;
+  position: relative;
+}
+.work-item:nth-child(4) {
+  flex-basis: 49.5%;
+  position: relative;
+}
+.work img {
+  width: 100%;
+}
+.work h4 {
+  position: absolute;
+  font-family: $font-main;
+  color: $alt-text;
+  font-size: 1.75rem;
+  font-weight: 700;
+  letter-spacing: 0.125em;
+  margin-bottom: 0;
+  bottom: 1em;
+  left: 1em;
+}

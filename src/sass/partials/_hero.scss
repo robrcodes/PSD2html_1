@@ -1,0 +1,32 @@
+/* Hero Section
+------------------------------------*/
+section#hero {
+  background: url(./images/hero/man_with_laptop_550.jpg) no-repeat top right;
+  position: relative;
+  height: 70vh;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.hero h1 {
+  font-family: $font-main;
+  color: $alt-text;
+  font-size: 3rem;
+  font-weight: 400;
+  text-align: center;
+  transform: scaleY(1.0018);
+  letter-spacing: 0.125em;
+}
+.hero p {
+  font-family: $font-main;
+  max-width: 50%;
+  color: $alt-text;
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 1.933;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 0 15%;
+}

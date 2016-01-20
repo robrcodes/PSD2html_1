@@ -1,0 +1,32 @@
+{
+  "name": "Skeleton-2.0.4",
+  "authors": [
+    "Rob <robjrenwick@gmail.com>"
+  ],
+  "description": "PSD to HTML project with single page website layout",
+  "main": "index.html",
+  "moduleType": [
+    "amd",
+    "es6",
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "psd"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "scrollreveal": "~3.0.0",
+    "jquery": "~2.1.4",
+    "jquery.scrollTo": "~2.1.2"
+  }
+}

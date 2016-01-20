@@ -1,0 +1,44 @@
+/* services
+----------------------------------------------------------------*/
+.services {
+  width: 47%;
+  margin: 0 auto;
+  border-left: 1px solid $alt-text;
+  border-right: 1px solid $alt-text;
+  border-bottom: 1px solid $alt-text;
+  padding-bottom: 4rem;
+}
+/* creates border at top of service section,
+      either side of heading for this section */
+.services .row .serv-left,
+.services .row .serv-right {
+  height: 1px;
+  border-top: 1px solid $alt-text;
+}
+/* creates the gap without a visible border at top
+      of section where heading is located */
+.services .row .serv-mid {
+  border-top: 0 solid $alt-text;
+}
+.services h3 {
+  font-family: $font-main;
+  color: $alt-text;
+  font-size: 3.3rem;
+  font-weight: 700;
+  text-align: center;
+  transform: scaleY(1.002);
+  letter-spacing: 0.125em;
+  margin: -20px auto 15px;
+}
+.services p {
+  width: 61%;
+  color: $alt-text;
+  font-size: 1.6rem;
+  font-weight: 300;
+  text-align: justify;
+  margin: 0 auto 10px;
+}
+section#services {
+  background-image: url(./images/services/holding_stylus.png);
+  background-size: cover;
+}

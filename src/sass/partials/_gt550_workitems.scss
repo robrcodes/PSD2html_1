@@ -1,0 +1,22 @@
+/* Work items > 550px styles
+------------------------------------*/
+
+.work-item {
+  flex-basis: 28.6%;
+}
+.work-item:nth-child(3) {
+  flex-basis: 28.6%;
+}
+.work-item:nth-child(4) {
+  flex-basis: 28.6%;
+}
+.work-item:nth-child(3n+2) {
+  flex-basis: 41.8%;
+}
+
+.work h4 {
+  font-size: 24px;
+  font-size: 2.4rem;
+  font-weight: 700;
+  letter-spacing: 0.125em;
+}

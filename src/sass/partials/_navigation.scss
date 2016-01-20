@@ -1,0 +1,59 @@
+/* Navigation
+----------------------------------------------------------- */
+.navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  z-index: 3;
+  width: 200px;
+  transform: translateX(-100%);
+  transition: all 0.5s ease-in-out;
+}
+.navigation.active {
+  transform: translateX(0);
+}
+.navigation ul {
+  list-style: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: 0;
+  background-color: $nav-bg;
+}
+.navigation ul li {
+  display: block;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+.navigation ul li a {
+  display: block;
+  height: 100%;
+  padding: 10px 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $nav-text;
+  font-weight: 900;
+}
+.navigation ul li a.current,
+.navigation ul li a:hover {
+  color: $main-text;
+  background-color: $main-bg;
+}
+.navigation .menu-icon {
+  color: $main-text;
+  font-size: 30px;
+  line-height: 1em;
+  position: absolute;
+  left: 100%;
+  padding: 20px;
+  transition: all 0.15s ease-in-out;
+}
+.navigation .menu-icon:hover {
+  color: $main-text;
+  background-color: transparent;
+}

@@ -1,0 +1,17 @@
+/* Footer section
+------------------------------------------------------------*/
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 40px;
+  font-family: $font-main;
+  color: $main-text;
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+footer img {
+  padding-right: 20px;
+  margin-top: -1.75em;
+  height: 2.125em;
+}

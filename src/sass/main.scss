@@ -1,0 +1,123 @@
+/* -----------------------------------------------------------
+**
+**          ******* Mobile First Styles *******
+**
+** ---------------------------------------------------------*/
+
+// Sass Variable definitions:
+
+$nav-bg: #3c3c3c;
+$nav-text: #ffffff;
+$main-bg: #ffffff;
+$main-text: #3c3c3c;
+$alt-text: #ffffff;
+$alt-bg: #3c3c3c;
+$font-main: Lato,sans-serif;
+
+// Sass Mixin definitions:
+
+
+/*! Start of Custom CSS ******************************************/
+/* NOTE: Many base styles set in Skeleton,
+html is set to 62.5% so that all the REM measurements
+are based on 10px sizing. So basically 1.5rem = 15px :) */
+
+html {
+  /*font-size: 10px;
+  font-size: 1rem;*/
+}
+body {
+  font-family: $font-main;
+  font-size: 1rem;
+}
+img.ellipse {
+  width: 3.4%;
+  margin-bottom: 4rem;
+}
+img.sm-oval {
+  padding-top: 0;
+  width: 1.2%;
+  position: absolute;
+  bottom: 9%;
+  left: 50%;
+  margin: 0 auto;
+}
+h1,
+h2,
+h3,
+h4 {
+  text-transform: uppercase;
+}
+ul.work-items li {
+  list-style: none;
+}
+.button {
+  font-family: $font-main;
+  color: $alt-text;
+  font-weight: 400;
+  text-align: center;
+  border-width: 2px;
+  border-color: $alt-bg;
+  border-style: solid;
+  background-color: $alt-bg;
+  width: 50%;
+  margin-top: 3rem;
+}
+.button:hover {
+  color: $main-text;
+  background-color: $main-bg;
+}
+
+/* Section general styling
+------------------------------------------------------------*/
+
+section {
+  text-align: center;
+  padding: 60px 0 30px;
+}
+
+// include footer styles
+@import 'partials/footer';
+
+// include navigation styles
+@import 'partials/navigation';
+
+// include hero styles
+@import 'partials/hero';
+
+// include info-panel styles
+@import 'partials/infopanel';
+
+// include services styles
+@import 'partials/services';
+
+// include work panel styles
+@import 'partials/workpanels';
+
+// ----------------------------------------------------------
+//
+//       Larger Screen Styles: > 550px
+//
+// ----------------------------------------------------------
+
+/******* Larger Screen Styles ********/
+
+@media (min-width: 550px) {
+  section {
+    padding: 80px 0;
+  }
+
+  // include > 550px work items
+  @import 'partials/gt550_workitems';
+
+  // include > 550px hero styles
+  @import 'partials/gt550_hero';
+
+  // include > 550px services styles
+  @import 'partials/gt550_services';
+
+  // include > 550px info-panel styles
+  @import 'partials/gt550_infopanel';
+
+
+} /* END OF MIN 550PX MEDIA */

@@ -1,0 +1,36 @@
+/* Info Panel layout for sections
+------------------------------------*/
+
+.info-panel {
+  width: 47%;
+  margin: 0 auto;
+  border: 1px solid $main-text;
+  padding-bottom: 4rem;
+}
+
+.info-panel h3 {
+  font-family: $font-main;
+  color: $main-text;
+  font-size: 3.3rem;
+  font-weight: 700;
+  text-align: center;
+  transform: scaleY(1.002);
+  letter-spacing: 0.125em;
+  background-color: $main-bg;
+  margin: -20px auto 15px;
+  width: 54%;
+}
+
+.info-panel p {
+  width: 61%;
+  font-size: 1.6rem;
+  font-weight: 300;
+  text-align: justify;
+  margin: 0 auto 10px;
+}
+
+.info-panel img {
+  width: 15%;
+  max-width: 4rem;
+  margin: 4rem auto 2rem;
+}
