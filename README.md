@@ -1,4 +1,4 @@
-# PSD to HTML Conversion
+# PSD to HTML
 
 This repository contains the web development code used to convert a photoshop PSD design comp of a web landing page into a working HTML template page.
 
