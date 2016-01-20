@@ -20,7 +20,7 @@ The following frameworks/tools were used:
 
 ## PSD Design
 
-This landing page was designed by ![Evgenia Kornienko](https://www.behance.net/JaneKorn)
+This landing page was designed by [Evgenia Kornienko](https://www.behance.net/JaneKorn)
 
 Adobe [Creative Cloud Extract](http://www.adobe.com/creativecloud/extract.html) was used to source the graphical elements and font information.
 
