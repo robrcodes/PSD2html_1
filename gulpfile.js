@@ -33,7 +33,7 @@ var paths = {
 };
 
 // default task
-gulp.task('default', ['watchtower', 'doSass', 'allcss', 'mincss']);
+gulp.task('default', ['serve', 'doSass', 'allcss', 'mincss']);
 
 // Static Server + watching scss/html files
 gulp.task('serve', ['doSass', 'allcss', 'mincss'], function() {
@@ -50,6 +50,7 @@ gulp.task('serve', ['doSass', 'allcss', 'mincss'], function() {
     gulp.watch('dist/allcss.css', ['mincss']);
 
     // reload browser
+    gulp.watch("./dist/*.css").on('change', browserSync.reload);
     gulp.watch("./*.html").on('change', browserSync.reload);
 });
 
@@ -102,14 +103,3 @@ gulp.task('minjs', function() {
     .pipe(uglify())
     .pipe(gulp.dest('./dist/'));
 });
-
-// watch task - watch css file and run concat/min task
-// gulp.task('watchtower', function(){
-//   // compile sass
-//   gulp.watch('src/sass/main.scss', ['doSass']);
-//   gulp.watch('src/sass/partials/*.scss', ['doSass']);
-//   // concatenate css
-//   gulp.watch('src/css/main.css', ['allcss']);
-//   // concatenate and minify css
-//   gulp.watch('dist/allcss.css', ['mincss']);
-// });
