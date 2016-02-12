@@ -1,5 +1,6 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
+var browserSync = require('browser-sync').create();
 var sourcemaps = require('gulp-sourcemaps');
 var cssnano = require('gulp-cssnano');
 var uglify = require('gulp-uglify');
@@ -32,7 +33,27 @@ var paths = {
 };
 
 // default task
-gulp.task('default', ['watchtower', 'doSass', 'allcss', 'mincss']);
+gulp.task('default', ['serve', 'doSass', 'allcss', 'mincss']);
+
+// Static Server + watching scss/html files
+gulp.task('serve', ['doSass', 'allcss', 'mincss'], function() {
+
+    browserSync.init({
+        server: "./"
+    });
+    // compile sass
+    gulp.watch('src/sass/main.scss', ['doSass']);
+    gulp.watch('src/sass/partials/*.scss', ['doSass']);
+    // concatenate css
+    gulp.watch('src/css/main.css', ['allcss']);
+    // concatenate and minify css
+    gulp.watch('dist/allcss.css', ['mincss']);
+
+    // reload browser
+    gulp.watch("./dist/*.css").on('change', browserSync.reload);
+    gulp.watch("./*.html").on('change', browserSync.reload);
+});
+
 
 // concatinate css to dist folder
 // this version not minified
@@ -81,15 +102,4 @@ gulp.task('minjs', function() {
     .pipe(concat('alljs.min.js'))
     .pipe(uglify())
     .pipe(gulp.dest('./dist/'));
-});
-
-// watch task - watch css file and run concat/min task
-gulp.task('watchtower', function(){
-  // compile sass
-  gulp.watch('src/sass/main.scss', ['doSass']);
-  gulp.watch('src/sass/partials/*.scss', ['doSass']);
-  // concatenate css
-  gulp.watch('src/css/main.css', ['allcss']);
-  // concatenate and minify css
-  gulp.watch('dist/allcss.css', ['mincss']);
 });
