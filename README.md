@@ -6,6 +6,8 @@ This landing page was created to be mobile first responsive, from a single stati
 
 This page was also coded using [Flex Box](http://caniuse.com/#search=flex) CSS and is therefore only compatible with the latest browsers (not IE). I have intentionally not used a fallback.
 
+[Live Preview](http://rrenwick.github.io/PSD2html_1/)
+
 ## Tools / Workflows
 
 The following frameworks/tools were used:
