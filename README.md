@@ -6,7 +6,7 @@ This landing page was created to be responsive, from a single static comp, there
 
 This page was also coded using [Flex Box](http://caniuse.com/#search=flex) CSS and is therefore only compatible with the latest browsers (not IE). I have intentionally not used a fallback.
 
-[Live Preview](http://rrenwick.github.io/PSD2html_1/)
+[Live Preview](http://robrcodes.github.io/PSD2html_1/)
 
 ## Tools / Workflows
 
